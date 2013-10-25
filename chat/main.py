@@ -15,6 +15,7 @@ class Main(web.RequestHandler):
 
 application = web.Application([
     (ur'/', Main),
+    (ur'/static/(.*)', web.StaticFileHandler, {'path': path.join(PROJECT_PATH, 'static')}),    
 ])
 
 
