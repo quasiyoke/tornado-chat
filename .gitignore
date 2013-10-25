@@ -1,3 +1,8 @@
+# Distutils
 dist
 build
 *.egg-info
+
+# Sass
+.sass-cache
+*.css
