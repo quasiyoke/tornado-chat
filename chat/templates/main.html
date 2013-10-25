@@ -4,9 +4,10 @@
 {% block stylesheets %}
 <link rel="stylesheet" type="text/css" href="/static/css/screen.css" media="screen" />
 <style>
-	body {
-	color: #{{ color }};
-	}
+  .form-wrap {
+  background: #{{ color }};
+  color: #fff;
+  }
 </style>
 {% end %}
 
@@ -17,5 +18,12 @@
 
 
 {% block content %}
-Hi there!
+<div class="form-wrap">
+  <form>
+	<input type="submit" value="Send">
+	<div class="message-input-wrap">
+	  <textarea></textarea>
+	</div>
+  </form>
+</div>
 {% end %}
