@@ -13,11 +13,15 @@
 
 
 {% block scripts %}
+<script type="text/javascript">
+COLOR = '{{ color }}';
+</script>
 <script type="text/javascript" src="/static/js/main.js"></script>
 {% end %}
 
 
 {% block content %}
+<div class="messages"></div>
 <div class="form-wrap">
   <form>
 	<input type="submit" value="Send">
